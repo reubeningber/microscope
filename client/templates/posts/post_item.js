@@ -1,4 +1,7 @@
 Template.postItem.helpers({
+    ownPost: function() {
+        return this.userId == Meteor.userId();
+    },
 	domain: function() {
 		var a = document.createElement('a');
 
@@ -6,3 +9,4 @@ Template.postItem.helpers({
 		return a.hostname;
 	}
 });
+
