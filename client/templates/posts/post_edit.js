@@ -27,5 +27,5 @@ Template.postEdit.events({
             Posts.remove(currentPostId);
             Router.go('postsList');
         }
-    } 
+    }
 });
